@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./purchaseform.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name=”viewport” content=”width=device-width”/>
+</head>
+<body>
+    <header>
+    <nav role="full-horizontal">
+        <ul class="container">
+            <li><a href="homepage.html">HOME</a></li> &nbsp; &nbsp;
+            <li><a id = "About Us" href="about.html">ABOUT US</a></li> &nbsp; &nbsp;
+            <li><a href="FAQ.html">FAQ</a></li> &nbsp; &nbsp;
+            <li><a href="#privacypolicy">PRIVACY POLICY</a></li> &nbsp; &nbsp;
+            <li><a href="#contactcus">CONTACT US</a></li>
+            </a>
+        </ul>
+    </nav>
+</header> 
+<br>
+<br>
+<br>
+
+    <div class="one">
+            <h1><center>EQUICK your friendly E-Shop
+ </center></h1>
+        </div>
+        <form class="purchaseForm" method="POST" action="emailsender.php" enctype="multipart/form-data">
+
+        <fieldset>
+        <div>
+            <label for="">Product quantity</label>
+            <input 
+                type="number"
+                name="productquantity"
+                id="quantity"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="">Name</label>
+            <input 
+                type="text" 
+                name="name"
+                required
+            />
+            <br>
+
+            <label for="">Surname</label>
+            <input 
+            type="text" 
+            name="surname"
+            required
+        />
+        </div>
+
+        <div>
+            <label for="">Mobile No.</label>
+            <input 
+                type="number" 
+                name="phonenumber"
+                id="mobile" 
+                title="Mobile Phone"
+                minlength="8"
+                maxlength="8"
+                required
+                oninvalid="this.setCustomValidity('The length of you mobile number should not less and not more than 8 digits.')"
+                oninput="setCustomValidity('')"
+            />
+        </div>
+
+        <div>
+            <label for="">Email</label>
+            <input 
+                type="email" 
+                id="email"
+                name="email"
+                pattern=".+@gmail\.com"
+                size="30"
+                title="Email Field"
+                oninvalid="this.setCustomValidity('Your email must contain @gmail.com part')"
+                oninput="setCustomValidity('')"
+            />
+        </div>
+
+        <div>
+            <label for="">Address</label>
+            <input 
+                type="text" 
+                id="address"
+                name="address"
+                require
+            />
+        </div>        
+            <br>
+            <br>
+
+            <div> 
+            <input id="gobackbutton" value="Go back" onclick="history.back()">
+            <input id="purchasebutton" type="submit" value="Submit you purchase">
+        </div>
+
+            </fieldset>
+            </form>
+        </main>
+
+            <footer id = "footer">
+                <p style="text-align:center;">
+                    Copyright <span>&copy; 2022 Anvars Intezars Inc. All rights Reserved. </span></p>
+                    <img src="./mastercard.png" width="55px" height="auto" class="center"> <img src="./visa.png" width="55px" height="auto" class="center">
+            </footer>
+        </body>
+        </html>
