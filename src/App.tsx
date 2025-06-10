@@ -19,7 +19,9 @@ function App() {
         links={LINKSDAT3}
       />
       
+      <ProductCard />
     </>
+    
   )
 }
 

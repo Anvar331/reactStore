@@ -1,9 +1,9 @@
 import React from 'react';
 
 interface Product  {
-  name: String;
-  price: Number;
-  description: String;
+  name?: string;
+  price?: number;
+  description?: string;
 }
 
 const ProductCard: React.FC<Product> = (props) => {
@@ -13,6 +13,17 @@ const ProductCard: React.FC<Product> = (props) => {
           <p>Price: {props.price}</p>
           <p>Description: {props.description}</p>
       </div>
+  );
+}
+
+function AddToProductCart() {
+  const handleClick = () => {
+    alert('Your product is added!');
+  };
+  return (
+    <button onClick={handleClick}>
+      Add to Product Cart
+    </button>
   );
 }
 
