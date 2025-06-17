@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-function GetCategories() {
+function ProductCategories() {
 
     const [category, setCategory] = useState([]);
 
@@ -30,7 +30,7 @@ function GetCategories() {
 
  }
 
- export default GetCategories;
+ export default ProductCategories;
 
 
  //fetch('https://dummyjson.com/products/category-list')
